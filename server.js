@@ -277,7 +277,26 @@ app.get('/api/base-stations/:stationId', (req, res) => {
     
     // Generate station-specific KPI data with variations
     const liveData = simulateLiveData(baseData);
-    const stationKPIs = JSON.parse(JSON.stringify(liveData.network_kpis));
+   const stationKPIs = JSON.parse(JSON.stringify(liveData.network_kpis));
+
+// Station-level active users (realistic)
+stationKPIs.active_users = {
+  current: Math.floor(randomInRange(600, 1800)),
+  threshold: 2000,
+  unit: "users",
+  status: "good",
+  trend: [900, 1000, 1100, 1200, 1250, 1300, 1350]
+};
+
+// Adjust based on station condition
+if (station.status === "warning") {
+  stationKPIs.active_users.current = Math.floor(stationKPIs.active_users.current * 0.85);
+}
+
+if (station.status === "maintenance") {
+  stationKPIs.active_users.current = Math.floor(stationKPIs.active_users.current * 0.5);
+}
+
     
     // Add variation based on station status
     if (station.status === 'warning') {
