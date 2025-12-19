@@ -1,0 +1,34 @@
+{
+  "base_stations": [
+    {"id": "BS001", "name": "Delhi Central Tower", "region": "North", "city": "New Delhi", "latitude": 28.6139, "longitude": 77.2090, "status": "operational", "coverage_radius": 2.5},
+    {"id": "BS002", "name": "Mumbai Andheri Station", "region": "West", "city": "Mumbai", "latitude": 19.0760, "longitude": 72.8777, "status": "operational", "coverage_radius": 1.5},
+    {"id": "BS003", "name": "Bangalore Tech Park", "region": "South", "city": "Bangalore", "latitude": 12.9716, "longitude": 77.5946, "status": "warning", "coverage_radius": 2.0},
+    {"id": "BS004", "name": "Kolkata Salt Lake Tower", "region": "East", "city": "Kolkata", "latitude": 22.5726, "longitude": 88.3639, "status": "operational", "coverage_radius": 2.5},
+    {"id": "BS005", "name": "Chennai Marina Station", "region": "South", "city": "Chennai", "latitude": 13.0827, "longitude": 80.2707, "status": "operational", "coverage_radius": 2.0},
+    {"id": "BS006", "name": "Hyderabad Hitech City", "region": "South", "city": "Hyderabad", "latitude": 17.3850, "longitude": 78.4867, "status": "operational", "coverage_radius": 2.5},
+    {"id": "BS007", "name": "Pune Hinjewadi Tower", "region": "West", "city": "Pune", "latitude": 18.5204, "longitude": 73.8567, "status": "maintenance", "coverage_radius": 1.5},
+    {"id": "BS008", "name": "Jaipur Pink City Station", "region": "North", "city": "Jaipur", "latitude": 26.9124, "longitude": 75.7873, "status": "operational", "coverage_radius": 2.5},
+    {"id": "BS009", "name": "Ahmedabad SG Highway", "region": "West", "city": "Ahmedabad", "latitude": 23.0225, "longitude": 72.5714, "status": "operational", "coverage_radius": 2.0},
+    {"id": "BS010", "name": "Chandigarh Sector 17", "region": "North", "city": "Chandigarh", "latitude": 30.7333, "longitude": 76.7794, "status": "operational", "coverage_radius": 1.5}
+  ],
+  "network_kpis": {
+    "call_drop_rate": {"current": 0.8, "threshold": 2.0, "unit": "%", "status": "excellent", "trend": [1.2, 1.1, 1.0, 0.9, 0.8, 0.8, 0.7]},
+    "call_setup_success_rate": {"current": 98.7, "threshold": 95.0, "unit": "%", "status": "excellent", "trend": [98.0, 98.2, 98.4, 98.5, 98.6, 98.7, 98.8]},
+    "network_availability": {"current": 99.85, "threshold": 99.0, "unit": "%", "status": "excellent", "trend": [99.7, 99.75, 99.8, 99.82, 99.84, 99.85, 99.87]},
+    "average_throughput": {"current": 35.2, "threshold": 30.0, "unit": "Mbps", "status": "good", "trend": [32.0, 33.0, 34.0, 34.5, 35.0, 35.2, 35.5]},
+    "latency": {"current": 25, "threshold": 50, "unit": "ms", "status": "excellent", "trend": [30, 28, 27, 26, 25, 25, 24]},
+    "packet_loss": {"current": 0.2, "threshold": 1.0, "unit": "%", "status": "excellent", "trend": [0.4, 0.3, 0.25, 0.22, 0.2, 0.2, 0.18]},
+    "active_users": {"current": 125000, "threshold": 200000, "unit": "users", "status": "good", "trend": [110000, 115000, 118000, 120000, 122000, 125000, 128000]},
+    "spectrum_efficiency": {"current": 2.5, "threshold": 2.0, "unit": "bps/Hz", "status": "excellent", "trend": [2.2, 2.3, 2.4, 2.45, 2.48, 2.5, 2.55]}
+  },
+  "regional_performance": [
+    {"region": "North", "call_drop_rate": 0.7, "availability": 99.9, "throughput": 38.2, "active_stations": 3},
+    {"region": "South", "call_drop_rate": 0.9, "availability": 99.8, "throughput": 36.5, "active_stations": 3},
+    {"region": "East", "call_drop_rate": 0.8, "availability": 99.85, "throughput": 34.1, "active_stations": 1},
+    {"region": "West", "call_drop_rate": 1.0, "availability": 99.75, "throughput": 33.2, "active_stations": 3}
+  ],
+  "alerts": [
+    {"severity": "warning", "message": "BS003 Bangalore Tech Park showing elevated call drops", "timestamp": "2025-12-19T10:30:00"},
+    {"severity": "info", "message": "Scheduled maintenance for BS007 Pune tonight 2AM-4AM", "timestamp": "2025-12-19T09:15:00"}
+  ]
+}
