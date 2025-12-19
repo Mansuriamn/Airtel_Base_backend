@@ -11,16 +11,15 @@
     {"id": "BS009", "name": "Ahmedabad SG Highway", "region": "West", "city": "Ahmedabad", "latitude": 23.0225, "longitude": 72.5714, "status": "operational", "coverage_radius": 2.0},
     {"id": "BS010", "name": "Chandigarh Sector 17", "region": "North", "city": "Chandigarh", "latitude": 30.7333, "longitude": 76.7794, "status": "operational", "coverage_radius": 1.5}
   ],
-  "network_kpis": {
-    "call_drop_rate": {"current": 0.8, "threshold": 2.0, "unit": "%", "status": "excellent", "trend": [1.2, 1.1, 1.0, 0.9, 0.8, 0.8, 0.7]},
-    "call_setup_success_rate": {"current": 98.7, "threshold": 95.0, "unit": "%", "status": "excellent", "trend": [98.0, 98.2, 98.4, 98.5, 98.6, 98.7, 98.8]},
-    "network_availability": {"current": 99.85, "threshold": 99.0, "unit": "%", "status": "excellent", "trend": [99.7, 99.75, 99.8, 99.82, 99.84, 99.85, 99.87]},
-    "average_throughput": {"current": 35.2, "threshold": 30.0, "unit": "Mbps", "status": "good", "trend": [32.0, 33.0, 34.0, 34.5, 35.0, 35.2, 35.5]},
-    "latency": {"current": 25, "threshold": 50, "unit": "ms", "status": "excellent", "trend": [30, 28, 27, 26, 25, 25, 24]},
-    "packet_loss": {"current": 0.2, "threshold": 1.0, "unit": "%", "status": "excellent", "trend": [0.4, 0.3, 0.25, 0.22, 0.2, 0.2, 0.18]},
-    "active_users": {"current": 1250, "threshold": 2000, "unit": "users", "status": "good", "trend": [1100, 1150, 1180, 1200, 1220, 1250, 1280]},
-    "spectrum_efficiency": {"current": 2.5, "threshold": 2.0, "unit": "bps/Hz", "status": "excellent", "trend": [2.2, 2.3, 2.4, 2.45, 2.48, 2.5, 2.55]}
-  },
+ "network_kpis": {
+  "call_drop_rate": { "current": 0.9, "threshold": 2.0, "unit": "%", "status": "excellent", "trend": [1.2,1.1,1.0,0.95,0.9,0.9,0.85] },
+  "call_setup_success_rate": { "current": 98.6, "threshold": 95.0, "unit": "%", "status": "excellent", "trend": [98.0,98.2,98.3,98.4,98.5,98.6,98.7] },
+  "network_availability": { "current": 99.82, "threshold": 99.0, "unit": "%", "status": "excellent", "trend": [99.7,99.75,99.78,99.8,99.81,99.82,99.85] },
+  "average_throughput": { "current": 36.4, "threshold": 30.0, "unit": "Mbps", "status": "good", "trend": [33,34,35,35.5,36,36.4,36.8] },
+  "latency": { "current": 28, "threshold": 50, "unit": "ms", "status": "excellent", "trend": [32,30,29,28,28,27,26] },
+  "packet_loss": { "current": 0.25, "threshold": 1.0, "unit": "%", "status": "excellent", "trend": [0.4,0.35,0.3,0.28,0.25,0.25,0.22] },
+  "spectrum_efficiency": { "current": 2.6, "threshold": 2.0, "unit": "bps/Hz", "status": "excellent", "trend": [2.3,2.4,2.5,2.55,2.6,2.6,2.65] }
+},
   "regional_performance": [
     {"region": "North", "call_drop_rate": 0.7, "availability": 99.9, "throughput": 38.2, "active_stations": 3},
     {"region": "South", "call_drop_rate": 0.9, "availability": 99.8, "throughput": 36.5, "active_stations": 3},
