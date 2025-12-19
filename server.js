@@ -42,7 +42,7 @@ const simulateLiveData = (baseData) => {
       case 'active_users':
         // Users fluctuate more dramatically
         newValue = current + Math.floor(randomInRange(-2000, 2000));
-        newValue = Math.max(100000, newValue); // Ensure minimum
+        newValue = Math.max(900, newValue); // Ensure minimum
         break;
         
       case 'latency':
